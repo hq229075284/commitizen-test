@@ -61,7 +61,7 @@ var engine = function (options) {
     //
     // By default, we'll de-indent your commit
     // template and will keep empty lines.
-    prompter: function (cz, commit) {
+    prompter: function (inquirer, commit) {
       // Let's ask some questions of the user
       // so that we can populate our commit
       // template.
@@ -69,7 +69,7 @@ var engine = function (options) {
       // See inquirer.js docs for specifics.
       // You can also opt to use another input
       // collection library if you prefer.
-      cz.prompt([
+      inquirer.prompt([
         {
           type: 'list',
           name: 'type',

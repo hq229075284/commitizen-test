@@ -4,9 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "cm": "cz",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "chalk": "^4.1.2",
+    "commitizen": "^4.2.4",
+    "lodash.map": "^4.6.0",
+    "longest": "^2.0.1",
+    "word-wrap": "^1.2.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./cz-conventional.js"
+    }
+  }
 }
